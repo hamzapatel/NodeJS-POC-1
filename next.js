@@ -25,6 +25,13 @@ app.get(
   }
 );
 
+app.get(
+  "/",
+  function (req, res, next) {
+    res.redirect("home");
+  }
+);
+
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
