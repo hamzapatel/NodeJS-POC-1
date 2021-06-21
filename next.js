@@ -20,7 +20,6 @@ app.get(
   setTimeMiddleWare,
   redirectToDetails,
   function (req, res, next) {
-    console.log(req.currentDate);
     res.send("Hello World");
   }
 );

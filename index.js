@@ -47,4 +47,6 @@ const getWeekDayDate = (weekDay) => {
   currentDate.setDate(currentDate.getDate() + weekDay - currentDate.getDay());
   return currentDate.toLocaleString();
 };
+
+module.exports = {getWeekDayDate,server}
 server.listen(3000, "127.0.0.1");
